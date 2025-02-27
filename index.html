@@ -25,43 +25,47 @@
     }
 
     .title {
-      font-size: 6vw; /* Адаптивный размер */
+      font-size: 22.8vw; /* Было 24vw, уменьшено на 5% */
       position: relative;
       white-space: nowrap;
       color: white;
     }
 
-    .title:first-of-type { /* Буква "C" */
-      margin-bottom: -15px; /* Приближение к сердцу */
+    .title:first-of-type { 
+      margin-bottom: -63.5px; /* Было -67px, уменьшено на 5% */
     }
 
-    .title:last-of-type { /* Надпись "Марта" */
-      margin-top: -10px; /* Приближение к сердцу */
-    }
-
-    .shadow {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
+    .title:last-of-type { 
+      margin-top: -48.5px; /* Было -51px, уменьшено на 5% */
     }
 
     .c-heart {
-      width: 30vw;
-      height: 40vw;
-      max-width: 250px;
-      max-height: 300px;
+      width: 95.76vw;  /* Было 100.8vw, уменьшено на 5% */
+      height: 111.72vw; /* Было 117.6vw, уменьшено на 5% */
+      max-width: 638.4px;  /* Было 672px, уменьшено на 5% */
+      max-height: 718.8px; /* Было 756px, уменьшено на 5% */
     }
 
-    @media (max-width: 1080px) { /* Redmi Note 8T */
+    @media (max-width: 1080px) { /* Для устройств типа Redmi Note 8T */
       .title {
-        font-size: 7vw;
+        font-size: 28.5vw; /* Было 30vw, уменьшено на 5% */
       }
 
       .c-heart {
-        width: 200px;
-        height: 250px;
+        width: 364.8px;  /* Было 384px, уменьшено на 5% */
+        height: 593.8px; /* Было 624px, уменьшено на 5% */
+      }
+    }
+
+    /* Адаптация для iPhone 11 */
+    @media (max-width: 828px) and (max-height: 1792px) { /* iPhone 11 */
+      .title {
+        font-size: 25.08vw; /* Было 26.4vw, уменьшено на 5% */
+      }
+
+      .c-heart {
+        width: 474.24px;  /* Было 499.2px, уменьшено на 5% */
+        height: 741px; /* Было 780px, уменьшено на 5% */
       }
     }
   </style>
