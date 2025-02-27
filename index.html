@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Анимированное сердце</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background-color: #000;
+      font-family: 'Marck Script', cursive, sans-serif;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 5.5vw; /* Адаптивный размер */
+      position: absolute;
+      white-space: nowrap;
+      color: white;
+    }
+
+    .title:first-of-type { /* Буква "C" */
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .title:last-of-type { /* Надпись "Марта" */
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .shadow {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .c-heart {
+      width: 35vw; /* 35% от ширины экрана */
+      height: 45vw;
+      max-width: 280px; /* Максимальный размер */
+      max-height: 320px;
+    }
+
+    @media (max-width: 1080px) { /* Redmi Note 8T */
+      .title {
+        font-size: 6vw;
+      }
+
+      .c-heart {
+        width: 220px;
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <span class="title">C</span>
+  <div class="shadow">
+    <canvas class="c-heart" data-canvas="heart"></canvas>
+  </div>
+  <span class="title">Марта</span>
+
+  <script src="./script.js"></script>
+</body>
+</html>
