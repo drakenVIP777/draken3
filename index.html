@@ -25,22 +25,18 @@
     }
 
     .title {
-      font-size: 5.5vw; /* Адаптивный размер */
-      position: absolute;
+      font-size: 6vw; /* Адаптивный размер */
+      position: relative;
       white-space: nowrap;
       color: white;
     }
 
     .title:first-of-type { /* Буква "C" */
-      top: 10%;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-bottom: -15px; /* Приближение к сердцу */
     }
 
     .title:last-of-type { /* Надпись "Марта" */
-      bottom: 10%;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-top: -10px; /* Приближение к сердцу */
     }
 
     .shadow {
@@ -52,20 +48,20 @@
     }
 
     .c-heart {
-      width: 35vw; /* 35% от ширины экрана */
-      height: 45vw;
-      max-width: 280px; /* Максимальный размер */
-      max-height: 320px;
+      width: 30vw;
+      height: 40vw;
+      max-width: 250px;
+      max-height: 300px;
     }
 
     @media (max-width: 1080px) { /* Redmi Note 8T */
       .title {
-        font-size: 6vw;
+        font-size: 7vw;
       }
 
       .c-heart {
-        width: 220px;
-        height: 280px;
+        width: 200px;
+        height: 250px;
       }
     }
   </style>
